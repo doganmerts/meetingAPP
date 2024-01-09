@@ -1,0 +1,26 @@
+@{
+    ViewBag.Title = "Participant Form";
+}
+<h1 class="text-center">Meeting Participant Form</h1>
+<form method="post" action="/Meeting/Apply">
+    <div class="mb-3">
+        <label for="Name" class="form-table">Name</label>
+        <input type="text" name="Name" id="Name" class="form-control">
+    </div>
+     <div class="mb-3">
+        <label for="Phone" class="form-table">Phone</label>
+        <input type="text" name="Phone" id="Phone" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="Email" class="form-table">Email</label>
+        <input type="text" name="Email" id="Email" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="WillAttend" class="form-table">Participant Statue</label>
+        <select name="WillAttend" id="WillAttend" class="form-select">
+            <option value="true">Yes, i'll attend</option>
+            <option value="false">No, i'll not attend</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">SUBMIT</button>
+</form>
